@@ -6,10 +6,69 @@
     public void Run()
     {
         //Här tänkte jag att huvud meny skall vara.
+        int menyVal;
+        Console.WriteLine("Welcome to our luxury garage");
+        do
+        {
+            Console.WriteLine("Please choose from the menu options"
+                + "\n1: Add new customer"
+                + "\n2: Remove customer"
+                + "\n3: View lot"
+                + "\n4: Find vehicle"
+                + "\n5: Sort lot"
+                + "\n0: Exit the program");
+            menyVal = int.Parse(Console.ReadLine());
+            switch (menyVal)
+            {
+                case 1:
+                    Add_vehicle();
+                    break;
+                case 2:
+                    Remove_vehicle();
+                    break;
+                case 3:
+                    Print_vehicle();
+                    break;
+                case 4:
+                    Find_vehicle();
+                    break;
+                case 5:
+                    Sort_parking_lot();
+                    break;
+                case 0:
+                    menyVal = 0;
+                    break;
+                default:
+                    Console.WriteLine("Oopsi Daisy. Something went wrong. Please try again!");
+                    break;
+            }
+        }
+        while (menyVal !=0);
     }
     public void Add_vehicle()
     {
         //Lägga till fordon
+        Console.Clear();
+        Console.WriteLine("How many vehicle do you want to park?");
+        try
+        {
+            int pLot = Convert.ToInt32(Console.ReadLine());
+            if (pLot > 100)
+            {
+                Console.WriteLine("The garage is full at the moment. Please come back again later!");
+            }
+            else
+            {
+                for (int i = 0;i < pLot; i++)
+                {
+
+                }
+            }
+        }
+        catch
+        {
+            Console.WriteLine("Oopsi Daisy. Something went wrong. Please try again!");
+        }
     }
     public void Remove_vehicle()
     {
