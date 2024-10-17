@@ -21,6 +21,7 @@
     {
         get { return parkingLotInfo; }
     }
+    DateTime tempDate = DateTime.Now;
 }
 class program
 {
@@ -28,7 +29,11 @@ class program
     {
         List<CustomersVehicle> vehiclesList = new List<CustomersVehicle>(100);
         int menyVal;
-        Console.WriteLine("Welcome to our luxury garage");
+        Console.WriteLine("<<<<<<<<<<<<<<<<<<<<¤>>>>>>>>>>>>>>>>>>>>" //20st. var sin sida. bara för att komma ihåg
+            +"\n<<     Welcome to our luxury garage    >>"
+            +"\n<<     Current vehicle:" + vehiclesList.Count+ "               >>"
+            +"\n<<<<<<<<<<<<<<<<<<<<¤>>>>>>>>>>>>>>>>>>>>");
+        Console.WriteLine();
         do
         {
             Console.WriteLine("Please choose from the menu options"
@@ -36,7 +41,6 @@ class program
                 + "\n2: Remove Customer"
                 + "\n3: View Lot"
                 + "\n4: Find Vehicle"
-                + "\n5: Sort Lot"
                 + "\n0: Exit Program");
             menyVal = int.Parse(Console.ReadLine());
             switch (menyVal)
@@ -53,21 +57,22 @@ class program
                     Console.WriteLine("The vehicle is now in the system");
                     CustomersVehicle newVehicle = new CustomersVehicle(plateNumInfo, vehicleTypeInfo, parkingLotInfo);
                     vehiclesList.Add(newVehicle);
+
                     break;
                 case 2:
                     Console.Write("Choose the vehicle you want to remove [0 Cancel]: ");
                     int removeVehicle = Convert.ToInt32(Console.ReadLine());
-                    vehiclesList.Remove(removeVehicle);
+                    //vehiclesList.Remove(removeVehicle);
                     break;
                 case 3:
                     Console.Clear();
                     foreach (CustomersVehicle vehicle in vehiclesList)
                     {
-                        Console.WriteLine(vehicle.PlateNum + " - " + vehicle.VehicleType + " - " + vehicle.ParkingLot);
+                        Console.WriteLine("License Number: " + vehicle.PlateNum + " - " + "Type: " + vehicle.VehicleType + " - " + "Lot: " + vehicle.ParkingLot);
                     }
                     break;
                 case 4:
-                    Console.WriteLine("Witch vehicle do you want to find?");
+                    Console.WriteLine("Witch vehicle do you want to find? Please write the license number");
                     string licenseNum = Console.ReadLine();
                     bool currentVehicle = false;
                     for (int i = 0; i < vehiclesList.Count; i++)
@@ -75,8 +80,9 @@ class program
                         if (vehiclesList[i].PlateNum == licenseNum)
                         {
                             Console.WriteLine("The current vehicle is on the list");
-                            Console.WriteLine(vehiclesList[i].PlateNum + " - " + vehiclesList[i].VehicleType + " - " + vehiclesList[i].ParkingLot);
-                            currentVehicle = true; break;
+                            Console.WriteLine("License Number: " + vehiclesList[i].PlateNum + " - " + "Type: " + vehiclesList[i].VehicleType + " - " + "Lot: " + vehiclesList[i].ParkingLot);
+                            currentVehicle = true;
+                            break;
                         }
                     }
                     if (!currentVehicle)
