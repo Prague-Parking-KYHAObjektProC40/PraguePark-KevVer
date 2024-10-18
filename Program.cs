@@ -5,7 +5,7 @@
     private int ticketLot;
     private DateTime enterTime;
     private DateTime leaveTime;
-    public CustomersVehicle(string _plateNum, string _vehicleType, int _ticketLot, DateTime enterTime, DateTime leaveTime)
+    public CustomersVehicle(string _plateNum, string _vehicleType, int _ticketLot)
     {
         this.PlateNum = _plateNum;
         this.VehicleType = _vehicleType;
@@ -161,7 +161,7 @@ class Garage
         {
             if (pLot[i] == null)
             {
-                pLot[i] = new CustomersVehicle(newPlateNum, newVehicleType, newTicketLot, newDate);
+                pLot[i] = new CustomersVehicle(newPlateNum, newVehicleType, newTicketLot);
                 break;
             }
             else
