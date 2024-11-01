@@ -1,6 +1,0 @@
-C:\Users\kevin\Pictures\x.DevSecOps KYH-program\Objektorienterad programmering C\KYH-Koder\PragueParkingV2Form-Test\PragueParkingV2Form-Test\obj\Debug\PragueParkingV2Form-Test.csproj.AssemblyReference.cache
-C:\Users\kevin\Pictures\x.DevSecOps KYH-program\Objektorienterad programmering C\KYH-Koder\PragueParkingV2Form-Test\PragueParkingV2Form-Test\obj\Debug\PragueParkingV2Form_Test.frmPragueParking.resources
-C:\Users\kevin\Pictures\x.DevSecOps KYH-program\Objektorienterad programmering C\KYH-Koder\PragueParkingV2Form-Test\PragueParkingV2Form-Test\obj\Debug\PragueParkingV2Form_Test.Properties.Resources.resources
-C:\Users\kevin\Pictures\x.DevSecOps KYH-program\Objektorienterad programmering C\KYH-Koder\PragueParkingV2Form-Test\PragueParkingV2Form-Test\obj\Debug\PragueParkingV2Form_Test.ViewRegNum.resources
-C:\Users\kevin\Pictures\x.DevSecOps KYH-program\Objektorienterad programmering C\KYH-Koder\PragueParkingV2Form-Test\PragueParkingV2Form-Test\obj\Debug\PragueParkingV2Form-Test.csproj.GenerateResource.cache
-C:\Users\kevin\Pictures\x.DevSecOps KYH-program\Objektorienterad programmering C\KYH-Koder\PragueParkingV2Form-Test\PragueParkingV2Form-Test\obj\Debug\PragueParkingV2Form-Test.csproj.CoreCompileInputs.cache
